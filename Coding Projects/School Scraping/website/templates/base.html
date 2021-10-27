@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+{%block head%}
+{%endblock%}
+
+<title>{%block title%}Welcome{%endblock%}</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->  
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/style.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="http://fonts.cdnfonts.com/css/magical-mystery-tour-outline-shadow" rel="stylesheet">
+  <link href="http://fonts.cdnfonts.com/css/eighty-percent-caps" rel="stylesheet">
+  <link href="http://fonts.cdnfonts.com/css/bebas" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+
+  <!-- General -->
+  <link href="http://fonts.cdnfonts.com/css/bitcube" rel="stylesheet">
+
+
+
+<script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+</script>
+
+
+  <!-- =======================================================
+  * Template Name: Regna - v4.3.0
+  * Template URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+</head>
+
+{%block body%}<body>{%endblock%}
+
+ <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div id="logo">
+        <h1>School Scraper</h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          {% if user.is_authenticated %}
+          <li><a class="nav-link scrollto" href="/logout">Logout</a></li> 
+      
+          {% else %}
+          <li><a class="nav-link scrollto" href="#hero">Home</a></li> 
+          <li><a class="nav-link" href="#sign-up">Sign Up</a></li>         
+          <li><a class="nav-link" href="#login">Login</a></li>   
+          {% endif %}
+
+        </ul>
+
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+{%block content%}
+{%endblock%}
+
+ <!-- Vendor JS Files -->
+  <script src="static/vendor/aos/aos.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+  <script src="static/vendor/purecounter/purecounter.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/js/main.js"></script>
+
+
+</body>
+
+</html>
+
+

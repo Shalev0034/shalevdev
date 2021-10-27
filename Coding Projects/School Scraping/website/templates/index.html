@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+  
+{%block head%}
+<!-- =======================================================
+  * Template Name: Regna - v4.5.0
+  * Template URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+{%endblock%}
+
+{%block content%} 
+
+  <section id="hero">
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Welcome to School Scraper</h1>
+      <h2>Automate your calender!</h2>
+      <a href="#sign-up" class="new-link btn-get-started">Get Started</a>
+    </div>
+  </section><!-- End Hero Section -->
+
+
+
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="sign-up">
+    
+
+      <div class="container" data-aos="fade-up" >      
+        {% include 'sign_up.html'%}
+      </div>
+  
+    </section><!-- End About Section -->
+
+
+    <section id="login">
+
+    <div class="container" data-aos="fade-up" >      
+      {%include 'login.html'%}
+    </div>
+
+    </section>
+   
+  </main>
+
+{%endblock%}
